@@ -1,0 +1,40 @@
+html {
+	width: 100%;
+	font-size: 151.9px;
+	font-family: "microsoft yahei";
+}
+
+/* 搜索底部 */
+.search-bg {
+	position: relative;
+	width: calc(722rem/72);
+	height: calc(150rem/72);
+	background: #f8f6f8;
+}
+
+/* 搜索包裹 */
+.search-warp {
+	position: absolute;
+	bottom:calc(20rem/72);
+	width: 100%;
+	text-align: center;
+}
+
+/*搜索框 */
+.search {
+	display: block;
+	margin: 0 auto;
+	width: calc(668rem/72);
+	height: calc(56rem/72);
+	outline-style: none;
+	border-style: none;
+	border:1px solid #e4e4e4;
+	border-radius: 5px;
+}
+input.search::-ms-input-placeholder{
+        text-align: center;
+}
+input.search::-webkit-input-placeholder{
+        text-align: center;
+}
+
