@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-	<link rel="stylesheet" type="text/css" href="reset.css"/>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
-	
-</head>
-<body>
-	<div class = "search-bg">
-		<div class = "search-warp">
-			<input class = "search" type="text" placeholder="搜索">
-		</div>
-	</div>
-	<script>
-    !function (a, b) {
-        function c() {
-            var a = b.documentElement.clientWidth, c = 32 * (a / 320);
-            b.getElementsByTagName("html")[0].style.fontSize = (c > 32 ? c : 32) + "px"
-        }
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
 
-        c();
-        a.addEventListener("resize", c, !1)
-    }(window, document);
-</script>
-    <script src = "index.js" type="text/javascript">
-    	
+</head>
+
+<body>
+    <!-- 搜索 -->
+    <div class="search-bg">
+        <div class="search-warp">
+            <input class="search" type="text" placeholder="搜索">
+        </div>
+    </div>
+    <!-- content -->
+    <div class="content">
+        <!-- 导航 -->
+        <nav>
+            <ul>
+                <li><img src="images/jyw-lt_03.png" alt=""><a href="">加拿大移民</a></li>
+                <li><img src="images/jyw-lt_05.png" alt=""><a href="">美国移民</a></li>
+                <li><img src="images/jyw-lt_07.png" alt=""><a href="">美国移民</a></li>
+                <li><img src="images/jyw-lt_09.png" alt=""><a href="">美国移民</a></li>
+                <li><img src="images/jyw-lt_15.png" alt=""><a href="">美国移民</a></li>
+                <li><img src="images/jyw-lt_16.png" alt=""><a href="">美国移民</a></li>
+                <li><img src="images/jyw-lt_17.png" alt=""><a href="">美国移民</a></li>
+                <li><img src="images/jyw-lt_18.png" alt=""><a href="">美国移民</a></li>
+
+            </ul>
+
+        </nav>
+        <!-- 版主推荐 -->
+        <section>
+            <ul>
+                <li class = "recommend">
+                    <div class="head">版主推荐</div>
+                    <div class = "recommend-content">
+                        <ul>
+                            <li><a href="">澳洲留学生怎么移民澳洲拿工作签证</a></li>
+                            <li><a href="">澳洲留学生怎么移民澳洲拿工作签证</a></li>
+                            <li><a href="">澳洲留学生怎么移民澳洲拿工作签证</a></li>
+                            <li><a href="">澳洲留学生怎么移民澳洲拿工作签证</a></li>
+                            <li><a href="">澳洲留学生怎么移民澳洲拿工作签证</a></li>
+                            <li><a href="">澳洲留学生怎么移民澳洲拿工作签证</a></li>
+                            <li><a href="">澳洲留学生怎么移民澳洲拿工作签证</a></li>
+                            <li><a href="">澳洲留学生怎么移民澳洲拿工作签证</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class = "tab"></li>
+                <li class = "random"></li>
+            </ul>
+        </section>
+    </div>
+    <!--  -->
+    <script>
+        !function (a, b) {
+            function c() {
+                var a = b.documentElement.clientWidth, c = 32 * (a / 320);
+                b.getElementsByTagName("html")[0].style.fontSize = (c > 32 ? c : 32) + "px"
+            }
+
+            c();
+            a.addEventListener("resize", c, !1)
+        }(window, document);
+    </script>
+    <script src="index.js" type="text/javascript">
+
     </script>
 </body>
+
 </html>
