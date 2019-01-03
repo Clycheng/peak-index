@@ -1,8 +1,9 @@
+@charset "UTF-8";
 html {
 	width: 100%;
 	font-size: 151.9px;
 	font-family: "microsoft yahei";
-	background: #f8f6f8
+	background: #f8f6f8;
 }
 a {
 	text-decoration: none;
@@ -10,7 +11,7 @@ a {
 /* 搜索底部 */
 .search-bg {
 	position: relative;
-	width: calc(722rem/72);
+	width: 100%;
 	height: calc(150rem/72);
 	background: #f8f6f8;
 }
@@ -33,16 +34,18 @@ a {
 	border-style: none;
 	border:1px solid #e4e4e4;
 	border-radius: 5px;
+	font-size: calc(20rem/72);
 }
 input.search::-ms-input-placeholder{
-        text-align: center;
+	text-align: center;
+
 }
 input.search::-webkit-input-placeholder{
-        text-align: center;
+	text-align: center;
 }
 /* nav部分 */
 nav {
-	width: calc(722rem/72);
+	width: 100%;
 	height: 100%;
 	background: #ffffff;
 	padding: 40px 20px;
@@ -97,7 +100,6 @@ nav ul li a {
 /* section */
 section {
 	width: 100%;
-	/* background: red; */
 }
 section ul li {
 	width: 100%;
@@ -114,6 +116,7 @@ section ul li.recommend .head{
 	box-sizing: border-box;
 
 }
+/* 版主推荐内容部分 */
 section ul li.recommend .recommend-content {
 	width: 100%;
 	border-top: 1px solid #f8f6f8;
@@ -124,28 +127,120 @@ section ul li.recommend .recommend-content li {
 	width: 100%;
 	margin-top: 0px;
 	border:none;
-	padding-left: 25px;
+	padding-left: calc(25rem/72);
 	vertical-align: -webkit-baseline-middle;
 	box-sizing: border-box;
 
 	
 	
 }
+/* 序号 */
 section ul li.recommend .recommend-content ul li a::before{
 	display: inline-block;
-	width: calc(31rem/72);
-	height: calc(29rem/72);
+	width: calc(32rem/72);
+	height: calc(32rem/72);
+	line-height: calc(32rem/72);
 	content: "1";
 	color: white;
-	background: red;
+	background: #b9b9b9;
 	text-align: center;
+	border-radius: 2px;
 	margin-right: 10px;
 }
+section ul li.recommend .recommend-content ul li:nth-child(1) a::before{
+	content: "1";
+	background-color: #fd6b6c
+}
+section ul li.recommend .recommend-content ul li:nth-child(2) a::before{
+	content: "2";
+	background-color: #f7b701
+}
+section ul li.recommend .recommend-content ul li:nth-child(3) a::before{
+	content: "3";
+	background-color: #9fc90b
+}
+section ul li.recommend .recommend-content ul li:nth-child(4) a::before{
+	content: "4";
+}
+section ul li.recommend .recommend-content ul li:nth-child(5) a::before{
+	content: "5";
+}
+section ul li.recommend .recommend-content ul li:nth-child(6) a::before{
+	content: "6";
+}
+section ul li.recommend .recommend-content ul li:nth-child(7) a::before{
+	content: "7";
+}
+section ul li.recommend .recommend-content ul li:nth-child(8) a::before{
+	content: "8";
+}
+/* 标题 */
 section ul li.recommend .recommend-content li a {
-	/* display: inline-block; */
 	position: relative;
-	top: -10px;
+	top: calc(-20rem/72);
 	font-size: calc(23rem/72);
-	color: #a0a0a0;
+	color: #686868;
+}
+/* 时间 */
+section ul li.recommend .recommend-content ul li a::after{
+	float: right;
+	width: calc(100rem/72);
+	height: calc(32rem/72);
+	position: relative;
+	top: calc(20rem/72);
+	line-height: calc(32rem/72);
+	text-align: right;
+	content: "08-29";
+	color: #bbbbbb;
+	border-radius: 2px;
+	margin-right: 10px;
+}
+/* 选项卡 */
+	/* 头部 */
+.tab-wrap{
+	width: 100%;
+	
+}
+.tab-wrap .tab-head{
+	width: 100%;
+	height: calc(90rem/72);
+	text-align: center;
+	border-bottom: 1px solid #f8f6f8;
+}
+.tab-wrap .tab-head ul li {
+	display: inline-block;
+	position: relative;
+	top: calc(-15rem/72);
+	margin-left: calc(20rem/72);
+	width: calc(60rem/72);
+	height:calc(60rem/72);
+	line-height: calc(60rem/72);
+	font-size: calc(29rem/72);
+}
+.tab-wrap .tab-head ul li:hover{
+	cursor: pointer;
+}
+.tab-wrap .tab-head ul li.active{
+	border-bottom: 3px solid salmon;
+	color: salmon;
+}
+/* 选项卡内容 */
+.selected{
+	width: 100%;
+}
+.selected .tab-cont {
+	width: 100%;
+	display: none;
+}
+/* 最新卡 */
+.selected .tab-cont.new {
+	background: blue;
+}
+/* 热门卡 */
+.selected .tab-cont.hot {
+	background: purple;
+}
+.selected .select {
+	display: block;
 }
 

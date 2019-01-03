@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/public.css">
     <link rel="stylesheet" type="text/css" href="index.css" />
-
+    <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
@@ -35,12 +36,13 @@
             </ul>
 
         </nav>
-        <!-- 版主推荐 -->
+
         <section>
             <ul>
-                <li class = "recommend">
+                <!-- 版主推荐 -->
+                <li class="recommend">
                     <div class="head">版主推荐</div>
-                    <div class = "recommend-content">
+                    <div class="recommend-content">
                         <ul>
                             <li><a href="">澳洲留学生怎么移民澳洲拿工作签证</a></li>
                             <li><a href="">澳洲留学生怎么移民澳洲拿工作签证</a></li>
@@ -53,10 +55,35 @@
                         </ul>
                     </div>
                 </li>
-                <li class = "tab"></li>
-                <li class = "random"></li>
+
+                <li class="tab">
+                    <!--选项卡 -->
+                    <aside class="tab-wrap">
+                        <div class="tab-head">
+                            <ul>
+                                <li class="active">最新</li>
+                                <li>热门</li>
+                                <li>精华</li>
+                            </ul>
+                        </div>
+                        <div class="selected clearfix">
+                            <div class="tab-cont new select">
+                                1
+                            </div>
+                            <div class="tab-cont hot">
+                                    2
+                            </div>
+                            <div class="tab-cont essence">
+                                3
+                            </div>
+                        </div>
+                    </aside>
+
+                </li>
             </ul>
         </section>
+
+
     </div>
     <!--  -->
     <script>
