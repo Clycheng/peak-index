@@ -229,12 +229,30 @@ section ul li.recommend .recommend-content ul li a::after{
 	width: 100%;
 }
 .selected .tab-cont {
-	width: 100%;
+	/* width: 100%; */
 	display: none;
 }
+
+
 /* 最新卡 */
-.selected .tab-cont.new {
-	background: blue;
+
+.selected .tab-cont .head {
+	width: 100%;
+	height: calc(115rem/72);
+}
+.selected .tab-cont .head .wrap{
+	float: left;
+}
+.selected .tab-cont .head .wrap.tit{
+	color: black;
+	font-size: calc(20rem/72)
+}
+.selected .tab-cont .head .wrap.tit span {
+	display: block;
+}
+.selected .tab-cont .head .wrap.huati{
+	float: right;
+	font-size: calc(25rem/72)
 }
 /* 热门卡 */
 .selected .tab-cont.hot {
